@@ -13,6 +13,12 @@ setup(
     name=package_name,
     version=package["version"],
     author=package['author'],
+    url="https://github.com/marianstefi20/dash-sortable-tree",
+    project_urls={
+        "Homepage": "https://github.com/marianstefi20/dash-sortable-tree",
+        "Source": "https://github.com/marianstefi20/dash-sortable-tree",
+        "Bug Tracker": "https://github.com/marianstefi20/dash-sortable-tree/issues",
+    },
     packages=[package_name],
     include_package_data=True,
     license=package['license'],

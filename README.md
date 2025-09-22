@@ -69,11 +69,14 @@ if __name__ == "__main__":
 
 - **id** (string): The ID of this component
 - **items** (list): Array of items with structure `{"id": "...", "parent_id": "...", "label": "..."}`
+- Note: For root items, set `parent_id` to `None`.
 - **selectedId** (string): Currently selected item ID
 - **collapsible** (boolean): Whether tree nodes can be collapsed/expanded
 - **removable** (boolean): Whether items can be removed
 - **indicator** (boolean): Show visual indicators during drag operations
 - **indentationWidth** (number): Pixels to indent each tree level
+- **expandToId** (string): Node ID to expand the tree path to (optionally select it)
+- **scrollToSelected** (boolean): When true, scrolls the selected node into view
 
 ## Development
 
@@ -110,7 +113,7 @@ If you have selected install_dependencies during the prompt, you can skip this p
     $ pip install -r tests/requirements.txt
     ```
 
-### Write your component code in `src/lib/components/DndTreeEditor.react.js`.
+### Write your component code in `src/lib/components/DndTreeEditor.react.tsx`.
 
 - The demo app is in `src/demo` and you will import your example component code into your demo app.
 - Test your code in a Python environment:
@@ -147,7 +150,7 @@ If you have selected install_dependencies during the prompt, you can skip this p
 
 3. Test your tarball by copying it into a new environment and installing it locally:
     ```
-    $ pip install dash_sortable_tree-0.0.6.tar.gz
+    $ pip install dash_sortable_tree-0.0.7.tar.gz
     ```
 
 4. If it works, then you can publish the component to NPM and PyPI:

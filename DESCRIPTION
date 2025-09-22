@@ -1,6 +1,6 @@
 Package: dashSortableTree
 Title: A Dash component wrapping dnd-kit to edit and reorder hierarchical trees with drag & drop.
-Version: 0.0.6
+Version: 0.0.7
 Description: A Dash component wrapping dnd-kit to edit and reorder hierarchical trees with drag & drop.
 Depends: R (>= 3.0.2)
 Imports: 

@@ -278,3 +278,7 @@ GitHub.sublime-settings
 # Julia manifest file names
 Manifest.toml
 JuliaManifest.toml
+
+# Duplicated JS bundles for R wrapper (keep primary assets in dash_sortable_tree/ tracked)
+deps/
+inst/deps/

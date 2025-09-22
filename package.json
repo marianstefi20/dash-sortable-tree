@@ -1,6 +1,6 @@
 {
   "name": "dash-sortable-tree",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Dash component wrapping dnd-kit to edit and reorder hierarchical trees with drag & drop.",
   "main": "build/index.js",
   "scripts": {
